@@ -62,35 +62,7 @@ body {
     z-index: 0;
 }
 
-/* Content Wrapper */
-.content-wrapper {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 150px;
-    padding: 37px;
-    height: 100%;
-}
 
-/* Text Content */
-.text-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    width: 704px;
-}
-
-.event-title-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    width: 100%;
-}
 
 .event-title {
     font-family: 'Lexend', sans-serif;
@@ -103,7 +75,30 @@ body {
     width: 100%;
     min-height: 100px;
 }
+.content-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 2rem !important;
+  flex-wrap: nowrap !important;
+  overflow-x: auto !important; /* allows scroll if content is wider */
+  width: 100%;
+}
 
+/* Ensure text and image take fixed proportions */
+.text-content {
+  flex: 1 1 60% !important;
+  min-width: 300px;
+}
+
+.event-image-wrapper {
+  flex: 1 1 40% !important;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .event-description {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -171,12 +166,13 @@ body {
     }
 }
 
-@media (max-width: 1200px) {
-    .content-wrapper {
-        flex-direction: column;
-        gap: 40px;
-        padding: 40px 20px;
-    }
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: scroll !important;
+  }
+
     
     .text-content {
         width: 100%;
@@ -210,6 +206,7 @@ body {
     .announcement-card {
         height: auto;
         min-height: 500px;
+        overflow-x: auto !important;
     }
     
     .content-wrapper {
