@@ -4,7 +4,7 @@ import eventImage from '../assets/images/event-image-31e03c.png';
 
 function AnnouncementCard() {
   return (
-    <div className="w-[95vw] max-w-[1492px] min-h-[60vh] bg-[#87CEEB] rounded-[20px] backdrop-blur-[10px] relative mt-[35px] overflow-hidden mx-auto">
+    <div className="w-[95vw] max-w-[1492px] bg-[#87CEEB] rounded-[20px] backdrop-blur-[10px] relative mt-[35px] overflow-hidden mx-auto">
       {/* Background Blur */}
       <div
         className="absolute inset-0 z-0"
