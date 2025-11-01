@@ -35,18 +35,18 @@ function AnnouncementCard() {
           </button>
         </div>
         
-        {/* Event Image */}
-        <div className="w-[442px] h-[442px] relative">
-          <img 
-            src={eventImage} 
-            alt="Aagaz 4.0" 
-            className="w-full h-full object-cover rounded-[10px]"
-            style={{
-              filter: 'drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.75))',
-              boxShadow: 'inset 0px 0px 10px 6px rgba(0, 0, 0, 0.5)'
-            }}
-          />
-        </div>
+        <div className="relative flex items-center justify-center rounded-[10px] overflow-hidden">
+  <img
+    src={eventImage}
+    alt="Aagaz 4.0"
+    className="max-w-full max-h-[442px] rounded-[10px] object-contain"
+    style={{
+      filter: 'drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.75))',
+      boxShadow: 'inset 0px 0px 10px 6px rgba(0, 0, 0, 0.5)',
+    }}
+  />
+</div>
+
       </div>
     </div>
   );
