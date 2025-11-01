@@ -4,10 +4,10 @@ import eventImage from '../assets/images/event-image-31e03c.png';
 
 function AnnouncementCard() {
   return (
-    <div className="w-full max-w-[1492px] h-auto min-h-[637.5px] bg-[#87CEEB] rounded-[20px] backdrop-blur-[10px] relative mt-[34.96px] overflow-hidden">
-      {/* Background Blur Effect */}
+    <div className="w-[95vw] max-w-[1492px] min-h-[60vh] bg-[#87CEEB] rounded-[20px] backdrop-blur-[10px] relative mt-[35px] overflow-hidden mx-auto">
+      {/* Background Blur */}
       <div
-        className="absolute top-0 left-0 w-full h-full z-0"
+        className="absolute inset-0 z-0"
         style={{
           backgroundImage: `url(${backgroundBlur})`,
           backgroundSize: 'cover',
@@ -18,37 +18,39 @@ function AnnouncementCard() {
         }}
       />
 
-      {/* Content Wrapper */}
-      <div className="relative z-[1] flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-[150px] p-5 lg:p-[37px] h-full">
-        {/* Text Content */}
-        <div className="flex flex-col items-center lg:items-start gap-6 w-full lg:w-[704px] text-center lg:text-left">
-          <div className="flex flex-col items-center lg:items-start gap-2 w-full">
-            <h2 className="font-['Lexend'] font-medium text-[36px] sm:text-[44px] lg:text-[58px] leading-[1.25em] tracking-[-0.58px] text-black w-full">
-              Aagaz 4.0
-            </h2>
-            <p className="font-['Poppins'] font-normal text-[16px] sm:text-[18px] lg:text-[24px] leading-[1.5em] text-white w-full">
-              Lorem ipsum dolor sit amet consectetur. Neque pellentesque vestibulum facilisis a. In convallis id viverra dignissim tincidunt quisque. Ullamcorper mi quis facilisis mauris id. Duis egestas dui dui nullam rutrum magna. Lorem ipsum dolor sit amet consectetur. Neque pellentesque vestibulum facilisis a. In convallis id viverra dignissim tincidunt quisque. Ullamcorper mi quis facilisis mauris id. Duis egestas dui dui nullam rutrum magna.
-            </p>
-          </div>
+      {/* Content */}
+      <div className="relative z-[1] flex flex-row justify-between items-center gap-[4vw] p-[3vw] flex-wrap">
+        {/* Text Section */}
+        <div className="flex flex-col justify-center gap-[2vw] w-[50%] min-w-[300px]">
+          <h2 className="font-['Lexend'] font-medium text-[4vw] leading-[1.25em] tracking-[-0.05em] text-black">
+            Aagaz 4.0
+          </h2>
+          <p className="font-['Poppins'] font-normal text-[1.3vw] leading-[1.6em] text-white">
+            Lorem ipsum dolor sit amet consectetur. Neque pellentesque vestibulum facilisis a.
+            In convallis id viverra dignissim tincidunt quisque. Ullamcorper mi quis facilisis
+            mauris id. Duis egestas dui dui nullam rutrum magna. Lorem ipsum dolor sit amet
+            consectetur. Neque pellentesque vestibulum facilisis a. In convallis id viverra
+            dignissim tincidunt quisque. Ullamcorper mi quis facilisis mauris id. Duis egestas dui
+            dui nullam rutrum magna.
+          </p>
+
+          {/* Register Button */}
           <button
-  className="
-    w-[324px] h-[63px] rounded-lg border-2 border-[#E644A3]
-    bg-[#E644A3] text-white text-[28px] font-['Lexend'] font-normal
-    transition-all duration-200 ease-in-out
-    hover:bg-white hover:text-[#E644A3] hover:shadow-[0_0_20px_#E644A3]
-    active:scale-95
-    sm:w-[280px] sm:h-[56px] sm:text-[24px]
-    max-sm:w-full max-sm:text-[20px]
-  "
->
-  Register Now
-</button>
-
-
+            className="
+              w-[18vw] min-w-[150px] h-[4vw] min-h-[50px]
+              rounded-lg border-2 border-[#E644A3]
+              bg-[#E644A3] text-white text-[1.4vw] font-['Lexend']
+              transition-all duration-300 ease-in-out
+              hover:bg-white hover:text-[#E644A3] hover:shadow-[0_0_20px_#E644A3]
+              active:scale-95
+            "
+          >
+            Register Now
+          </button>
         </div>
 
-        {/* Event Image */}
-        <div className="relative flex items-center justify-center w-full max-w-[442px] h-auto rounded-[10px] overflow-hidden mt-6 lg:mt-0">
+        {/* Image Section */}
+        <div className="relative flex items-center justify-center w-[40%] min-w-[250px]">
           <img
             src={eventImage}
             alt="Aagaz 4.0"
