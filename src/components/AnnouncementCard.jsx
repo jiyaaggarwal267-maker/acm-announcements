@@ -19,13 +19,21 @@ function AnnouncementCard() {
       />
 
       {/* Content */}
-      <div className="relative z-[1] flex flex-row justify-between items-center flex-wrap gap-6 p-4 sm:p-6 md:p-8 lg:p-[3vw]">
+      <div
+        className="
+          relative z-[1] flex flex-row justify-between items-center 
+          gap-[3vw] p-[4vw] 
+          overflow-x-hidden
+          flex-nowrap
+        "
+      >
         {/* Text Section */}
-        <div className="flex flex-col justify-center gap-4 flex-[1_1_50%] min-w-[280px]">
-          <h2 className="font-['Lexend'] font-medium text-2xl sm:text-3xl md:text-4xl lg:text-[4vw] leading-tight text-black">
+        <div className="flex flex-col justify-center gap-[1.5vw] w-[55%] min-w-[230px]">
+          <h2 className="font-['Lexend'] font-semibold text-[4vw] sm:text-[3vw] md:text-[2.5vw] text-black leading-tight">
             Aagaz 4.0
           </h2>
-          <p className="font-['Poppins'] font-normal text-sm sm:text-base md:text-lg lg:text-[1.3vw] leading-relaxed text-white">
+
+          <p className="font-['Poppins'] text-[2.6vw] sm:text-[2vw] md:text-[1.2vw] text-white leading-relaxed">
             Lorem ipsum dolor sit amet consectetur. Neque pellentesque vestibulum facilisis a.
             In convallis id viverra dignissim tincidunt quisque. Ullamcorper mi quis facilisis
             mauris id. Duis egestas dui dui nullam rutrum magna. Lorem ipsum dolor sit amet
@@ -37,9 +45,9 @@ function AnnouncementCard() {
           {/* Register Button */}
           <button
             className="
-              w-[200px] h-[50px] sm:w-[220px] sm:h-[55px]
+              w-[40vw] sm:w-[25vw] md:w-[18vw] h-[10vw] sm:h-[7vw] md:h-[4vw]
               rounded-lg border-2 border-[#E644A3]
-              bg-[#E644A3] text-white text-base sm:text-lg md:text-xl font-['Lexend']
+              bg-[#E644A3] text-white text-[2.8vw] sm:text-[1.8vw] md:text-[1.1vw] font-['Lexend']
               transition-all duration-300 ease-in-out
               hover:bg-white hover:text-[#E644A3] hover:shadow-[0_0_20px_#E644A3]
               active:scale-95
@@ -50,7 +58,7 @@ function AnnouncementCard() {
         </div>
 
         {/* Image Section */}
-        <div className="relative flex items-center justify-center flex-[1_1_40%] min-w-[250px]">
+        <div className="flex items-center justify-center w-[40%] min-w-[200px]">
           <img
             src={eventImage}
             alt="Aagaz 4.0"
